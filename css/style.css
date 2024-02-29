@@ -24,24 +24,34 @@ header{
 }
 
 #sidebar{
-    background-color: black;
+    background-color:var(--color-sidebar-first-bg);
     height: 100%;
-    width: 200px;
+    width: 180px;
 }
 
 main{
     height: 100%;
-    ;
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     overflow-y: auto;
 }
 
 #top-main{
     height: 20%;
-    background-color: #3e76d3;
+    background-color:var(--color-nav-bg) ;
 }
 
 #bottom-main{
-    background-color: pink;
+    background-color:var(--color-primary);
     
+}
+
+.img-table{
+    width: 5%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.td-card{
+    width: 10%;
+    text-align: center;
 }
