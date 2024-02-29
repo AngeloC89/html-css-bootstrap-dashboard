@@ -1,0 +1,47 @@
+:root {
+    --color-primary: #ffffff;
+    --color-sidebar-first-bg: #051e34;
+    --color-nav-bg: #1b72e8;
+    --color-button-nav: #1a1a1a4f;
+    --color-circle-bg: #f26551;
+    --color-button-green: #198754;
+    --color-button-yellow: #ffc107;
+    --color-buton-red: #dc3545;
+    --color-icon-color: #6c757d;
+    --color-grafic-color: #3e76d3;
+    --color-bell: #ff8f00;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    z-index: 3001;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+#sidebar{
+    background-color: black;
+    height: 100%;
+    width: 200px;
+}
+
+main{
+    height: 100%;
+    ;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
+#top-main{
+    height: 20%;
+    background-color: #3e76d3;
+}
+
+#bottom-main{
+    background-color: pink;
+    
+}
