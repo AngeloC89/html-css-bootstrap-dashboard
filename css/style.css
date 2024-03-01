@@ -141,7 +141,37 @@ main {
 
 }
 
-@media screen and (max-width:768px) {
+i.fa-solid.fa-pencil{
+    font-size: 0.9em;
+}
+
+table button{
+    margin:4px;
+}
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
 
     tr td:nth-child(3),
     tr th:nth-child(3) {
@@ -152,6 +182,22 @@ main {
     tr th:nth-child(2) {
         display: none;
     }
+
+    #sidebar{
+        width: 80px;
+    }
+
+    main{
+        width: calc(100% - 80px);
+    }
+
+
+
+ 
+
+
+    
+
 
 
 
