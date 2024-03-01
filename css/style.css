@@ -12,46 +12,147 @@
     --color-bell: #ff8f00;
 }
 
-.wrapper{
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.wrapper {
     height: 100vh;
     width: 100%;
 }
 
-header{
+header {
     z-index: 3001;
     width: 100%;
+    height: 75px;
     background-color: var(--color-primary);
 }
 
-#sidebar{
-    background-color:var(--color-sidebar-first-bg);
-    height: 100%;
-    width: 180px;
+#search {
+    width: 80%;
 }
 
-main{
+.right-header div {
+    margin: auto 20px;
+    font-size: 1.2em;
+}
+
+.fas.fa-bell {
+    color: var(--color-bell);
+}
+
+.offcanvas.offcanvas-end {
+    width: 50%;
+}
+
+/* *************** sidebar ***************** */
+#sidebar {
+    background-color: var(--color-sidebar-first-bg);
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 180px;
+    padding: 20px;
+    color: white;
+
+}
+
+.sidecont {
+    padding-top: 73px;
+
+}
+
+.side div {
+    margin: 10px;
+}
+
+
+
+/* *********** ******** ************************ */
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+main {
     height: 100%;
     width: calc(100% - 180px);
     overflow-y: auto;
+    padding-top: 73px;
 }
 
-#top-main{
-    height: 20%;
-    background-color:var(--color-nav-bg) ;
+#top-main {
+
+    height: 130px;
+    background-color: var(--color-nav-bg);
 }
 
-#bottom-main{
-    background-color:var(--color-primary);
-    
+.badge-b {
+    background-color: #165BBA;
 }
 
-.img-table{
-    width: 5%;
+.plus-hover {
+    color: white;
+    border: 1px solid white;
+    flex-direction:;
+
+}
+
+
+
+.plus-hover:hover {
+    color: var(--color-nav-bg);
+    background-color: white;
+}
+
+#bottom-main {
+    background-color: var(--color-primary);
+
+}
+
+.img-table {
+    width: 35px;
     height: 100%;
     border-radius: 50%;
 }
 
-.td-card{
+.td-card {
     width: 10%;
     text-align: center;
+}
+
+.side div {
+    padding: 4px 0px;
+}
+
+.side>div:hover {
+    background-color: #eeeeee98;
+    cursor: pointer;
+}
+
+.nav-main {
+    width: calc(100% / 3);
+
+}
+
+@media screen and (max-width:768px) {
+
+    tr td:nth-child(3),
+    tr th:nth-child(3) {
+        display: none;
+    }
+
+    tr td:nth-child(2),
+    tr th:nth-child(2) {
+        display: none;
+    }
+
+
+
 }
