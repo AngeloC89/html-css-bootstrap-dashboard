@@ -16,6 +16,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+li{
+    list-style: none;
+}
+
 .debug {
     border: 1px solid red;
 }
@@ -69,24 +73,28 @@ header {
 
 .side div {
     margin: 10px;
+    padding: 4px 0px;
+}
+
+.side>div:hover {
+    background-color: #eeeeee98;
+    cursor: pointer;
 }
 
 
 
 /* *********** ******** ************************ */
 
-a {
-    color: var(--color-primary);
-    text-decoration: none;
-}
+
 
 main {
     height: 100%;
     width: calc(100% - 180px);
-    overflow-y: auto;
+   
     padding-top: 73px;
 }
 
+/* *********** top - main ***************** */
 #top-main {
 
     height: 130px;
@@ -100,7 +108,7 @@ main {
 .plus-hover {
     color: white;
     border: 1px solid white;
-    flex-direction:;
+    flex-direction: ;
 
 }
 
@@ -111,11 +119,10 @@ main {
     background-color: white;
 }
 
-#bottom-main {
-    background-color: var(--color-primary);
+/* ********** bottom - main ****************** */
+#bottom-main {}
 
-}
-
+/* ****** first card **++ */
 .img-table {
     width: 35px;
     height: 100%;
@@ -127,17 +134,10 @@ main {
     text-align: center;
 }
 
-.side div {
-    padding: 4px 0px;
-}
 
-.side>div:hover {
-    background-color: #eeeeee98;
-    cursor: pointer;
-}
-
-.nav-main {
-    width: calc(100% / 3);
+.todo li{
+    padding: 10px;
+    
 
 }
 

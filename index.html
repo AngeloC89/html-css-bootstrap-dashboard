@@ -35,7 +35,21 @@
           <div><i class="fa-solid fa-bars"></i></div>
           <div><i class="fa-solid fa-circle-question"></i></div>
           <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
-          <div><i class="fas fa-bell"></i></div>
+          <div class="btn-group dropstart">
+            <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li class="m-2"><a class="text-decoration-none text-black fw-bold  " href="#">Link</a></li>
+              <li class="m-2"><a class="text-decoration-none text-black fw-bold  " href="#">Link</a></li>
+              <li class="m-2"><a class="text-decoration-none text-black fw-bold  " href="#">Link</a></li>
+              
+              <!-- Dropdown menu links -->
+            </ul>
+          </div>
+
+
+
         </div>
       </div>
     </nav>
@@ -69,13 +83,13 @@
 
 
     <main>
-      <div>
+      <div class="overflow-y-auto h-100">
         <div id="top-main" class="d-flex align-items-center flex-w text-white">
           <div class="container-fluid">
             <div class="row">
               <div class="col-6  fs-5 ">
                 <div>
-                  <span class="fs-1">Boolean </span>
+                  <span class="fs-1">Boolean</span>
                   <span class="badge-b badge rounded-pill">Piano blaze</span>
                 </div>
                 <span class="badge-b badge rounded-pill">3 app</span>
@@ -92,103 +106,103 @@
 
 
               <div class="col-2 d-flex">
-                
-                  <p class="m-2 ">Nuovo Studente</p>
+
+                <p class="m-2 ">Nuovo Studente</p>
 
 
-                  <span class="btn plus-hover d-flex align-self-start" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight">+
-                  </span>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                <span class="btn plus-hover d-flex align-self-start" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+
+                </span>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
 
-                      </h5>
+                    </h5>
 
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <!-- **** qua mettiamo il contenuto ****** -->
-                      <div class="row">
-                        <!-- ************* Nome ******************* -->
-                        <div class="col-6 mb-3">
-                          <label for="exampleFormControlInput1">Nome</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-                        </div>
-                        <!-- *************** Cognome ******************* -->
-                        <div class="col-6 mb-3">
-                          <label for="exampleFormControlInput1">Cognome</label>
-                          <input type="email" class="form-control" placeholder="Cognome">
-                        </div>
-                        <!-- *************** Email ********************* -->
-                        <div class="col-6 mb-3">
-                          <label for="email">Email address</label>
-                          <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">@</div>
-                            </div>
-                            <input type="email" id="email" class="form-control" id="inlineFormInputGroup"
-                              placeholder="Email">
-                          </div>
-                        </div>
-                        <!-- ***************** password *************** -->
-                        <div class="col-6">
-                          <label for="">Password</label>
-                          <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <!-- ***************** indirizzo ************ -->
-                        <div class="col-12 mb-3">
-                          <label for="exampleFormControlInput1">Indirizzo</label>
-                          <input type="text" class="form-control" placeholder="Indirizzo">
-                        </div>
-                        <!-- ************* città **************** -->
-                        <div class="col-6 mb-3">
-                          <label for="exampleFormControlInput1">Città</label>
-                          <input type="text" class="form-control" placeholder="Città">
-                        </div>
-
-                        <div class="col-4 mb-3">
-                          <!-- ************** stato **************** -->
-                          <label for="select">Stato</label>
-                          <select id="select" class="form-select" aria-label="Default select example">
-                            <option selected>Scegli...</option>
-                            <option value="italia">Italia</option>
-                            <option value="gran bratagna">Gran Bratagna</option>
-                            <option value="spagna">Spagna</option>
-                          </select>
-                        </div>
-                        <!-- **************** cap ******************** -->
-                        <div class="col-2 mb-3">
-                          <label for="exampleFormControlInput1">Cap</label>
-                          <input type="text" class="form-control" placeholder="Cap">
-                        </div>
-                        <!-- ************* scegli file ***************** -->
-                        <div class="col-12 mb-4">
-                          <div class="input-group mt-3">
-                            <input type="file" class="form-control" id="inputGroupFile02">
-                          </div>
-                        </div>
-
-                        <div class="mb-2 ">
-                          <input type="checkbox" name="select">
-                          <label for="name">Seleziona per</label>
-                        </div>
-                        <div><button type="button" class="btn btn-primary">Salva</button>
-                          <button type="button" class="btn btn-warning">Svuota</button>
-                        </div>
-
-
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <!-- **** qua mettiamo il contenuto ****** -->
+                    <div class="row">
+                      <!-- ************* Nome ******************* -->
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1">Nome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
                       </div>
+                      <!-- *************** Cognome ******************* -->
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1">Cognome</label>
+                        <input type="email" class="form-control" placeholder="Cognome">
+                      </div>
+                      <!-- *************** Email ********************* -->
+                      <div class="col-6 mb-3">
+                        <label for="email">Email address</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                          </div>
+                          <input type="email" id="email" class="form-control" id="inlineFormInputGroup"
+                            placeholder="Email">
+                        </div>
+                      </div>
+                      <!-- ***************** password *************** -->
+                      <div class="col-6">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                      </div>
+                      <!-- ***************** indirizzo ************ -->
+                      <div class="col-12 mb-3">
+                        <label for="exampleFormControlInput1">Indirizzo</label>
+                        <input type="text" class="form-control" placeholder="Indirizzo">
+                      </div>
+                      <!-- ************* città **************** -->
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1">Città</label>
+                        <input type="text" class="form-control" placeholder="Città">
+                      </div>
+
+                      <div class="col-4 mb-3">
+                        <!-- ************** stato **************** -->
+                        <label for="select">Stato</label>
+                        <select id="select" class="form-select" aria-label="Default select example">
+                          <option selected>Scegli...</option>
+                          <option value="italia">Italia</option>
+                          <option value="gran bratagna">Gran Bratagna</option>
+                          <option value="spagna">Spagna</option>
+                        </select>
+                      </div>
+                      <!-- **************** cap ******************** -->
+                      <div class="col-2 mb-3">
+                        <label for="exampleFormControlInput1">Cap</label>
+                        <input type="text" class="form-control" placeholder="Cap">
+                      </div>
+                      <!-- ************* scegli file ***************** -->
+                      <div class="col-12 mb-4">
+                        <div class="input-group mt-3">
+                          <input type="file" class="form-control" id="inputGroupFile02">
+                        </div>
+                      </div>
+
+                      <div class="mb-2 ">
+                        <input type="checkbox" name="select">
+                        <label for="name">Seleziona per</label>
+                      </div>
+                      <div><button type="button" class="btn btn-primary">Salva</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                      </div>
+
+
                     </div>
                   </div>
+                </div>
 
 
 
 
 
 
-                
+
               </div>
             </div>
           </div>
@@ -201,120 +215,123 @@
                 <div class="card-header">
                   <h2>Prossime Classi</h2>
                 </div>
-                <table class="table">
+                <div class="card p-3">
+                  <table class="table table-hover">
 
-                  <thead>
-                    <tr>
-                      <th>Nome</th>
-                      <th class="text-center">Data Inizio</th>
-                      <th class="text-center">ROI</th>
-                      <th class="text-center">Stato</th>
-                      <th class="text-center">Azioni</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="text-center">15 feb 2021</td>
-                      <td class="text-center">20%</td>
-                      <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
-                      </td>
-                      <td class="td-card">15 feb 2021</td>
-                      <td class="td-card">20%</td>
-                      <td class="td-card"><span class="badge text-bg-success ">Done</span></td>
-                      <td class="td-card"><button type="button" class="btn btn-outline-secondary"><i
-                            class="fa-solid fa-pencil"></i></button><button type="button"
-                          class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th class="text-center">Data Inizio</th>
+                        <th class="text-center">ROI</th>
+                        <th class="text-center">Stato</th>
+                        <th class="text-center">Azioni</th>
+                      </tr>
+                    </thead>
+  
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">15 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">16 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">17 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-warning text-white  ">process</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">18 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">19 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-danger ">failed</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">20 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-success ">Done</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="text-center">21 feb 2021</td>
+                        <td class="text-center">20%</td>
+                        <td class="text-center"><span class="badge text-bg-danger ">failed</span></td>
+                        <td class="text-center"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div><img class="img-table" class="img-fluid " src="img/class-avatar.jpg" alt=""> Nome</div>
+                        </td>
+                        <td class="td-card">22 feb 2021</td>
+                        <td class="td-card">20%</td>
+                        <td class="td-card"><span class="badge text-bg-success ">Done</span></td>
+                        <td class="td-card"><button type="button" class="btn btn-outline-secondary"><i
+                              class="fa-solid fa-pencil"></i></button><button type="button"
+                            class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
               </div>
 
-
+              <!-- ****** faq **************** -->
               <!-- seconda card con accordion menù -->
               <div class="card">
                 <div class="card-header">
@@ -378,42 +395,48 @@
                 </div>
               </div>
             </div>
-
+            <!-- *********** todo *************  -->
             <div class="col-12 col-lg-4">
               <!-- terza card "todo" con input check -->
               <div class="card mb-3">
                 <div class="card-header">
                   <h2>Todo</h2>
                 </div>
-                <div class="m-3">
 
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
-                    </label>
-                  </div>
-                </div>
+                <ul class="todo list-group p-3">
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="fcked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!-- ultima card con grafico -->
-              <div class="card">
-                <div>
-                  <div class="card-header">
-                    <img class="img-fluid border" src="img/stats.jpeg" alt="">
-                  </div>
-                  <ul class="list-group border-top-0">
+              <!--*********** ultima card con grafico ***** -->
+              <div class="card p-3">
+                <div class="card">
+                  <img class="img-fluid border" src="img/stats.jpeg" alt="">
+
+
+                  <ul class="list-group border-0">
                     <li class="list-group-item border-top-0 ">
                       <h4>Utenti attivi</h4>
                       <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -423,8 +446,11 @@
                     <li class="list-group-item">Marzo:1500</li>
                     <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
                   </ul>
+
+
                 </div>
               </div>
+
 
             </div>
           </div>
