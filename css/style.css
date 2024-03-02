@@ -35,9 +35,13 @@ header {
     height: 75px;
     background-color: var(--color-primary);
 }
+#logo-due{
+    width: 80px;
+}
+
 
 #search {
-    width: 80%;
+    width: 100%;
 }
 
 .right-header div {
@@ -49,7 +53,6 @@ header {
     background-color: rgba(0, 0, 0, 0.102);
     border-radius: 10px;
 }
-
 
 .fas.fa-bell {
     color: var(--color-bell);
