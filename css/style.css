@@ -16,7 +16,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -45,7 +45,7 @@ header {
     font-size: 1.2em;
 }
 
-.right-header ul li:hover{
+.right-header ul li:hover {
     background-color: rgba(0, 0, 0, 0.102);
     border-radius: 10px;
 }
@@ -76,10 +76,10 @@ header {
 }
 
 .side span {
-    font-size: 1.2em;
-    padding-right: 10px;
-    
-    
+    font-size: 1.1em;
+
+
+
 }
 
 .side>span:hover {
@@ -88,28 +88,32 @@ header {
     border-radius: 10px;
 }
 
-
-
 /* *********** ******** ************************ */
-
-
-
 main {
     height: 100%;
     width: calc(100% - 180px);
-   
+
     padding-top: 73px;
 }
 
 /* *********** top - main ***************** */
 #top-main {
-max-width: 100%;
-    height: 150px;
+    max-width: 100%;
+    height: 180px;
     background-color: var(--color-nav-bg);
+
 }
 
 .badge-b {
     background-color: #165BBA;
+    padding: 8px;
+
+}
+
+.badge-circle {
+    border-radius: 50%;
+    background-color: #165bba;
+    padding: 1px 10px 4px 12px;
 }
 
 .plus-hover {
@@ -119,15 +123,10 @@ max-width: 100%;
 
 }
 
-
-
 .plus-hover:hover {
     color: var(--color-nav-bg);
     background-color: white;
 }
-
-/* ********** bottom - main ****************** */
-#bottom-main {}
 
 /* ****** first card **++ */
 .img-table {
@@ -141,52 +140,37 @@ max-width: 100%;
     text-align: center;
 }
 
-
-.todo li{
+.todo li {
     padding: 10px;
-    
-
 }
 
-i.fa-solid.fa-pencil{
+i.fa-solid.fa-pencil {
     font-size: 0.9em;
 }
 
-table button{
-    margin:4px;
+table button {
+    margin: 4px;
 }
-
-
 
 @media screen and (max-width:992px) {
 
-    #sidebar{
+    #sidebar {
         width: 80px;
     }
 
-    main{
+    main {
         width: calc(100% - 80px);
     }
-
-
-
-}
-
-
-@media screen and (max-width:768px) {
-
-
-    #top-main{
-        height: 220px;
-    }
-
-    #top-main div.row div:nth-child(3){
-        order: -2;
-    }
-
     .offcanvas.offcanvas-end {
         width: 100%;
     }
-    
 }
 
+@media screen and (max-width:768px) {
+    #top-main {
+        height: 240px;
+    }
+
+    
+
+}
